@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+    /* font-family: 'Montserrat', sans-serif; */
+
+}
+
+#logo>img{
+    height: 20px;
+    /* border: 1px solid red; */
+}
+#Parentcontainer .left-container{
+ /* width: 60%; */
+ min-width: 428px;
+ max-width: 401px;
+ /* border: 1px solid red; */
+
+}
+#Parentcontainer .right-container{
+    width: 35%;
+   }
+.closeBtnPay{
+    position: absolute;
+    right: 2%;
+    font-size: 26px;
+    top: -3%;
+    cursor: pointer;
+
+}
+.container{
+    position: relative;
+     width: 701px;
+    /* height: 298px; */
+    /* border: 1px solid; */
+    box-shadow: 10px 10px 5px rgb(239 237 237);
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+.left-container{
+    /* margin: 20px 0px; */
+    /* border: 1px solid; */
+    width: fit-content;
+    padding: 11px 5px;
+    display: block;
+}
+
+.left-mobile{
+    /* width: 59%; */
+    margin: auto;
+    margin-top: 38px;
+}
+.left-mobile h3{
+    text-align: center;
+    font-size: 16px;
+}
+.leftSelectMobile{
+    width: 164px;
+    margin: 20px auto;
+    border: 1px solid;
+    padding: 8px 7px;
+    border-radius: 10px;
+    display: flex;
+}
+.left-mobile button,.btn{
+    width: 200px;
+    display: block;
+    margin: auto;
+    margin: 10px auto;
+    padding: 6px 4px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.left-mobile select , .left-mobile input{
+    border: none;
+    outline: none;
+}
+/* right contaienr  */
+.right-container{
+    width: 60%;
+    /* border: 1px solid; */
+    margin: 20px 0px;
+}
+.left-sec-container {
+    margin: 20px 0px;
+    border: 1px solid;
+    /* width: fit-content; */
+    padding: 11px 5px;
+    display: none;
+    min-width: 428px;
+    max-width: 401px;
+}
+.left-sec-container .otpBox{
+    width: 213px;
+}
+.left-sec-container .otpBox input{
+    width: 33px;
+    outline: none;
+}
+.otpBoxInput{
+    width: 100%;
+}
+.Notifyme{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    width: 100%;
+}
+.left-mobile span{
+    font-size: 10px;
+}
+.left-third-contaier{
+    margin: 20px 0px;
+    border: 1px solid;
+    /* width: fit-content; */
+    padding: 11px 5px;
+    display: none;
+    min-width: 428px;
+    max-width: 401px;
+}
+
+.container .container-up-cat
+{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.container-up-cat button{
+    padding: 6px 5px;
+    border: none;
+    background-color: white;
+}
+
+   /* pop-footer */
+   #popFooter{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 100%;
+    justify-content: space-between;
+
+}
+#popFooter>div{
+    /* border: 1px solid green; */
+    /* width: 40%; */
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+#viaupi,.viaupi{
+
+    width: 267px;
+    background-color: black;
+    color: white;
+    margin: auto;
+    padding: 5px 4px;
+    border-radius: 5px;
+    /* font-family: monospace; */
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.viaupiInside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.viaupi{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+/* Summary Page/Right Container */
+.Flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 5px ;
+}
+#applyCoupan{
+    display: flex;
+    margin-top: 13px;
+    margin-left: 5px;
+}
+   
+#productFinal{
+    max-height: 105px;
+    overflow-y: scroll;
+}
+#card{
+   
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+
+}
+#card img{
+    width: 70px;
+}
