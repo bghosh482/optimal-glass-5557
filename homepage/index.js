@@ -1,3 +1,6 @@
+import { navbar } from "./component/navbar.js";
+import { footer } from "./component/footer.js";
+
 let images = [
   "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/A-131-Banner_0e6d2056-3bd5-4ee0-8bd3-7a2a50e30e30_1400x.jpg?v=1657953240",
   "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/storm-pro-banner-zest_1400x.gif?v=1657645605",
@@ -115,7 +118,7 @@ let videoData = [
     name: "boAt Airdopes 141",
     des: "Airpodes TWS",
     actualprice: 4490,
-    discountprice: "1499",
+    discountprice: 1499,
   },
   {
     url: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/quinn_Z0-RLJlUCNvOBH3jAQq0V_card_thumbnail.mp4?v=17400666481025471640",
@@ -126,13 +129,50 @@ let videoData = [
     badge: "new launch",
     actualprice: 6690,
 
-    discountprice: "2999",
+    discountprice: 2999,
+  },
+  {
+    url: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/quinn_J5jruxliHDOaP6CargKes_card_thumbnail.mp4?v=7823576618366193591",
+    imgurl:
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/back_64x64.png?v=1657869596",
+    name: "boAt Airdopes 141 ",
+    des: "Airpodes TWS",
+    badge: "new launch",
+    actualprice: 4490,
+
+    discountprice: 1499,
+  },
+  {
+    url: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/quinn_TfTmvwmD0FlcxKDUtLTGE_card_thumbnail.mp4?v=756950886930560398",
+    imgurl:
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/eb8e0fbd-c412-48b3-9c91-5b49ddf35800_64x64.png?v=1625045744",
+    name: "boAt Airdopes 141 ",
+    des: "Airpodes TWS",
+    badge: "new launch",
+    actualprice: 4490,
+
+    discountprice: 1499,
+  },
+  {
+    url: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/quinn_KA4RPukHqJ4Oa3h0nmL2Y_card_thumbnail.mp4?v=8880057425593345752",
+    imgurl:
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_529ecf13-c993-4fe7-a2d6-9357f1a47db4_64x64.png?v=1650387008",
+    name: "boAt Watch Xtend‌",
+    des: "Smart watches",
+    badge: "new launch",
+    actualprice: 7990,
+
+    discountprice: 3499,
   },
 ];
-
+let nav = document.getElementById("navbar");
+let ft = document.getElementById("footer");
 let card = document.getElementById("card");
 let dealday = document.getElementById("dealday");
+let boatArr = JSON.parse(localStorage.getItem("boat")) || [];
 
+nav.innerHTML = navbar();
+ft.innerHTML = footer();
 let i = 0;
 function slideShow() {
   setInterval(function () {
@@ -167,6 +207,7 @@ function append(container, data) {
     let idiv1 = document.createElement("div");
     let idiv2 = document.createElement("div");
     let idiv3 = document.createElement("div");
+    let idiv4 = document.createElement("div");
     let pdiv = document.createElement("div");
     let badge = document.createElement("h3");
     badge.innerText = ele.badge;
@@ -191,11 +232,13 @@ function append(container, data) {
     idiv1.append(rating);
     let hori = "|";
     idiv2.append(hori);
-
+    let i = document.createElement("i");
+    i.className = "fa-solid fa-star";
+    idiv4.append(i);
     let review = document.createElement("p");
     review.innerText = `${ele.review} reviews`;
     idiv3.append(review);
-    ndiv2.append(idiv1, idiv2, idiv3);
+    ndiv2.append(idiv4, idiv1, idiv2, idiv3);
     ndiv2.classList.add("dr");
     let hr = document.createElement("hr");
     ndiv3.append(hr);
@@ -221,6 +264,9 @@ function append(container, data) {
     let btn = document.createElement("button");
 
     btn.innerText = "Add to cart";
+    btn.addEventListener("click", () => {
+      addToCart(ele);
+    });
     ndiv6.append(btn);
     ndiv6.classList.add("addtocart");
     div3.append(ndiv1, ndiv2, ndiv3, ndiv4, ndiv5, ndiv6);
@@ -229,7 +275,12 @@ function append(container, data) {
     container.append(div);
   });
 }
-
+function addToCart(ele) {
+  console.log(ele);
+  boatArr.push(ele);
+  localStorage.setItem("boat", JSON.stringify(boatArr));
+  // window.location.reload();
+}
 append(card, best_seller);
 append(dealday, dealOftheDay);
 
@@ -243,12 +294,14 @@ function videoAppend() {
     let ndiv1 = document.createElement("div");
     let ndiv2 = document.createElement("div");
     let ndiv3 = document.createElement("div");
+    div2.classList.add("videodes");
     let video = document.createElement("video");
     let source = document.createElement("source");
 
     source.src = ele.url;
     video.append(source);
     video.autoplay = true;
+    // video.controls = true;
     video.loop = true;
     let image = document.createElement("img");
     div1.append(video);
@@ -259,16 +312,24 @@ function videoAppend() {
     let des = document.createElement("p");
     des.innerText = ele.des;
     ndiv1.append(name, des);
+    ndiv1.className = "video-text";
     let hr = document.createElement("hr");
+    hr.id = "hr";
     ndiv2.append(hr);
 
-
-
-
+    let actualprice = document.createElement("p");
+    actualprice.innerText = `₹${ele.actualprice}`;
+    let discountprice = document.createElement("p");
+    discountprice.innerText = `₹${ele.discountprice}`;
+    ndiv3.append(discountprice, actualprice);
+    ndiv3.className = "video-price";
+    let img = document.createElement("img");
+    img.src = ele.imgurl;
+    img.id = "v_img";
 
     /*--------------*/
 
-    div2.append(ndiv1, ndiv2);
+    div2.append(ndiv1, ndiv2, ndiv3, img);
     videoCard.append(div1, div2);
     short.append(videoCard);
   });
