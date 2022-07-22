@@ -20,25 +20,9 @@
 
 #p2 {
     margin-top: 20px;
+    margin-bottom: 30px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.logo {
-    width: 16%;
-    margin: auto;
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.logo>a {
-    width: 170%;
-}
-
-.logo>a>img {
-    width: 50%;
-    border-radius: 50%;
 }
 
 .container>input {
@@ -61,17 +45,6 @@
 
 .container>a:hover {
     color: white;
-}
-
-#email {
-    margin-top: 20px;
-}
-
-#forgot {
-    position: absolute;
-    top: 295px;
-    right: 140px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container>button {
@@ -130,10 +103,11 @@
    
 .form_label{
     position: absolute;
-    top:15rem;
-    left: 9rem;
+    top:9.3rem;
+    left: 8.8rem;
     color: rgb(185,183,185);
     cursor: text;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     transition: top 200ms ease-in,left 200ms ease-in, font-size 200ms ease-in;
 }
 .textbox:focus{
@@ -143,18 +117,20 @@
 .textbox:focus ~ .form_label,
 .textbox:not(:placeholder-shown).textbox:not(:focus)~.form_label
 {
-    top: 13.9rem;
+    top: 8rem;
     left: 8.2rem;
     font-size: 11px;
     padding: 3px;
     background-color:rgb(37,37,37);
 }
+   
 .form_label2{
     position: absolute;
-    top:18.5rem;
-    left: 9rem;
+    top:12.7rem;
+    left: 8.8rem;
     color: rgb(185,183,185);
     cursor: text;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     transition: top 200ms ease-in,left 200ms ease-in, font-size 200ms ease-in;
 }
 .textbox2:focus{
@@ -164,7 +140,51 @@
 .textbox2:focus ~ .form_label2,
 .textbox2:not(:placeholder-shown).textbox2:not(:focus)~.form_label2
 {
-    top: 17.4rem;
+    top: 11.5rem;
+    left: 8.2rem;
+    font-size: 11px;
+    padding: 3px;
+    background-color:rgb(37,37,37);
+}
+.form_label3{
+    position: absolute;
+    top:16rem;
+    left: 8.8rem;
+    color: rgb(185,183,185);
+    cursor: text;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: top 200ms ease-in,left 200ms ease-in, font-size 200ms ease-in;
+}
+.textbox3:focus{
+    border: 2px solid white;
+}
+
+.textbox3:focus ~ .form_label3,
+.textbox3:not(:placeholder-shown).textbox3:not(:focus)~.form_label3
+{
+    top: 14.9rem;
+    left: 8.2rem;
+    font-size: 11px;
+    padding: 3px;
+    background-color:rgb(37,37,37);
+}
+.form_label4{
+    position: absolute;
+    top:19.4rem;
+    left: 8.8rem;
+    color: rgb(185,183,185);
+    cursor: text;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: top 200ms ease-in,left 200ms ease-in, font-size 200ms ease-in;
+}
+.textbox4:focus{
+    border: 2px solid white;
+}
+
+.textbox4:focus ~ .form_label4,
+.textbox4:not(:placeholder-shown).textbox4:not(:focus)~.form_label4
+{
+    top: 18.2rem;
     left: 8.2rem;
     font-size: 11px;
     padding: 3px;
