@@ -12,6 +12,13 @@
     height: 20px;
     /* border: 1px solid red; */
 }
+#Parentcontainer{
+    display: none;
+    position: absolute;
+    top:40%;
+    left:30%;
+    background-color: white;
+}
 #Parentcontainer .left-container{
  /* width: 60%; */
  min-width: 428px;
@@ -35,7 +42,8 @@
      width: 701px;
     /* height: 298px; */
     /* border: 1px solid; */
-    box-shadow: 10px 10px 5px rgb(239 237 237);
+    /* box-shadow: 10px 10px 5px rgb(239 237 237); */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     display: flex;
     justify-content: space-evenly;
     margin: auto;
