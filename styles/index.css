@@ -194,8 +194,8 @@ video {
   position: absolute;
   background-color: #e3e3e3;
   border-radius: 10px;
-  top: -50%;
-  left: 40%;
+  top: -35%;
+  left: 35%;
 }
 .videodes > div:nth-child(3) {
   display: flex;
