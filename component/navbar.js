@@ -108,13 +108,14 @@ let navbar = () => {
     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809"
     alt=""
 /></a>
+<span id="total_product"></span>
 <a href="../fw19_0912/cart.html">
   <img
     id="cart-click"
     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/navigation-Icon-3.png?v=1655206047"
     alt=""
 />
-<span id="totoal_product"></span></a>
+</a>
 `;
 };
 export { navbar };

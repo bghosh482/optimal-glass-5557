@@ -342,5 +342,5 @@ document.getElementById("cart-click").addEventListener("click", () => {
   window.location.href = "../fw19_0912/cart.html";
 });
 
-// let boatProduct = JSON.parse(localStorage.getItem("boat"));
-// console.log(boatProduct);
+let boatProduct = JSON.parse(localStorage.getItem("boat"));
+document.getElementById("total_product").innerText = boatProduct.length;
