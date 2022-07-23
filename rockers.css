@@ -1,0 +1,77 @@
+
+/* *{
+    background-color: black;
+} */
+
+#div_niks{
+/* display: flex;
+flex-direction: column;
+justify-content: space-around; */
+height: 380px;
+width: 240px;
+background-color: wheat;
+/* border: 1px solid black; */
+border-radius: 10px;
+box-shadow: 2px 2px 2px 2px white;
+/* padding: 10px 10px 10px 10px; */
+/* margin-left: 30%; */
+padding-left: 20%;
+gap: 10px;
+
+}
+#box_niks{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 10px;
+width: 100%;
+height: 1200px;
+background-color: black;
+margin-top: 10px;
+/* box-shadow: 10px 10px 10px 10px black; */
+border: 10px solid black;
+
+}
+/* /* *{
+    background-color: black;
+} */
+#top_img_niks{
+width: 100%;
+height: 400px;
+background-color: black;
+}
+.niks_photo{
+height: 200px;
+width: 200px;
+}
+.niks_photo:hover{
+transition: ease-in-out;
+transform: scale(1.4);
+}
+.btn_niks{
+background-color: rgb(255, 0, 0);
+color: white;
+height: 30px;
+width: 200px;
+font-size: larger;
+border: none;
+border-radius: 10px;
+
+
+}
+.btn_niks:hover{
+background-color: green;
+}
+.niks_same1{
+color: rgb(255, 0, 0);
+margin-left: 35px;
+}
+.niks_same2{
+margin-left: 35px;
+}
+/* .niks_same{
+/* margin-right: 50%; */
+/* margin-right: 100px;
+} */ 
+.heading_niks{
+font-size: 60px;
+}
