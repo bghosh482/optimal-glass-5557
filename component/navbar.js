@@ -11,7 +11,7 @@ let navbar = () => {
       <a href="">Shop</a>
       <ul id="details">
         <li>
-          <a href="#"
+          <a href="../3)boat products/Airdopes.html"
             ><img
               src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-TWS_540x.png?v=1612338251"
               alt=""
@@ -98,18 +98,22 @@ let navbar = () => {
   <input type="text" id="query" />
 </div>
 <div>
+<a href="../signup.html">
   <img
     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/navigation-Icon4.png?v=1655206048"
     alt=""
-  />
+/></a>
+<a href="#" id="gift">
   <img
     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809"
     alt=""
-  />
+/></a>
+<a href="../fw19_0912/cart.html">
   <img
+    id="cart-click"
     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/navigation-Icon-3.png?v=1655206047"
     alt=""
-  />
-</div>`;
+/></a>
+`;
 };
 export { navbar };

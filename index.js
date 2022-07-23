@@ -336,3 +336,6 @@ function videoAppend() {
 }
 
 videoAppend();
+document.getElementById("cart-click").addEventListener("click", () => {
+  window.location.href = "../fw19_0912/cart.html";
+});
