@@ -1,3 +1,4 @@
+
 #navbar {
   background-color: #000000;
   color: white;
@@ -35,7 +36,7 @@
 #navbar > div:nth-child(4) img {
   width: 100%;
 }
-#gift{
+#gift {
   width: 70%;
 }
 #dropdown-menu ul {

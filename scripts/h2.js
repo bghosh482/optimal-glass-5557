@@ -1,81 +1,78 @@
-// import navbar from "./components./navbar.js"
-// import navbar from "./components./footer.js"
+import { footer } from "../component/footer.js";
+let foot = document.getElementById("footer");
+foot.innerHTML = footer();
 
-// import { navbar } from "../components./navbar.js";
-// let nav = document.getElementById("navbar");
-// nav.innerHTML = navbar();
-
-// import { footer } from "../components./footer.js";
-// let foot = document.getElementById("footer");
-// foot.innerHTML = footer();
+import { navbar } from "../component/navbar.js";
+let nav = document.getElementById("navbar");
+nav.innerHTML = navbar();
 var airdopes_data = [
   {
     image:
-      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/aavante-bar-1160-2_400x.png?v=1613457301",
-    name: "boat Audio",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/c2386af9-4349-432f-8ba5-2b6aa06025c8_400x.png?v=1642405569",
+    name: "boat Airdopes",
     rating: "⭐4.7|1397 reviews",
     price: "1399",
   },
   {
     image:
-      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main1_affc1a7f-f714-4952-9c58-3de269539350_400x.png?v=1645099233",
-    name: "boat Audio",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_b6960b52-58d9-4e72-bd08-e4ae4f111bb2_400x.png?v=1645517420",
+    name: "boat Airdopes",
     rating: "⭐4.7|1397 reviews",
     price: "1399",
   },
   {
     image:
-      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/aavante-bar-1800-2_400x.png?v=1613457305",
-    name: "boat Audio",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/white_0c484c51-8b11-487b-bd27-c31b09780700_400x.png?v=1648723865",
+    name: "boat Airdopes",
     rating: "⭐4.7|1397 reviews",
     price: "1399",
   },
   {
     image:
-      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ABAaupera-FI02_400x.png?v=1657437576",
-    name: "boat Audio",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-image_e269db64-c847-4f30-b904-ccb4d973ae52_400x.png?v=1655526604",
+    name: "boat Airdopes",
     rating: "⭐4.7|1397 reviews",
     price: "1399",
   },
   {
     image:
-      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/AB1600DPP_12_1_400x.png?v=1637211337",
-    name: "boat Audio",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-121-v2-blue_400x.png?v=1612765376",
+    name: "boat Airdopes",
     rating: "⭐4.7|1397 reviews",
     price: "1399",
   },
   {
     image:
-      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/f6f2331a-5616-4b54-b400-0fbd8e7ce451_400x.png?v=1625046020",
-    name: "boat Audio",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_white_400x.png?v=1641206209",
+    name: "boat Airdopes",
     rating: "⭐4.7|1397 reviews",
     price: "1399",
   },
   {
     image:
-      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/f6f2331a-5616-4b54-b400-0fbd8e7ce451_400x.png?v=1625046020",
-    name: "boat Audio",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main1_c5f9fe7c-c012-4d93-ba0c-b25267c0560d_400x.png?v=1647426797",
+    name: "boat Airdopes",
     rating: "⭐4.7|1397 reviews",
     price: "1399",
   },
   {
     image:
-      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/aavante-bar-1580-2_4d21c7b8-7232-4207-8fd3-3db05adf3faa_400x.png?v=1633004695",
-    name: "boat Audio",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_blue_eb862c0f-658f-43a2-99c2-65783233f592_400x.png?v=1641980344",
+    name: "boat Airdopes",
     rating: "⭐4.7|1397 reviews",
     price: "1399",
   },
   {
     image:
-      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/24a22560-015e-4da6-b50a-2f54c5da2679_400x.png?v=1625046253",
-    name: "boat Audio",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-381-pink_9a1088cc-2e91-4acb-9d7c-841033532bfe_400x.png?v=1615468286",
+    name: "boat Airdopes",
     rating: "⭐4.7|1397 reviews",
     price: "1399",
   },
   {
     image:
-      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/83768c76-396a-4cca-9c11-d133764abbe6_400x.png?v=1624881782",
-    name: "boat Audio",
+      "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/fvtfgvt_400x.png?v=1658150489",
+    name: "boat Airdopes",
     rating: "⭐4.7|1397 reviews",
     price: "1399",
   },

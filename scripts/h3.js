@@ -1,14 +1,10 @@
-// import navbar from "./components./navbar.js"
-//     import navbar from "./components./footer.js"
-    
-    import  {navbar} from "./components./navbar.js"
-    let nav = document.getElementById("navbar")
-    nav.innerHTML = navbar()
-   
+import { footer } from "../component/footer.js";
+let foot = document.getElementById("footer");
+foot.innerHTML = footer();
 
-    import {footer} from "./components./footer.js"
-    let foot = document.getElementById("footer")
-    foot.innerHTML = footer()
+import { navbar } from "../component/navbar.js";
+let nav = document.getElementById("navbar");
+nav.innerHTML = navbar();
     var airdopes_data = [ {
     image :"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/c2386af9-4349-432f-8ba5-2b6aa06025c8_400x.png?v=1642405569",
     name:"boat Airdopes",
