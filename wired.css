@@ -1,7 +1,8 @@
 
-        /* *{
-            background-color: black;
-        } */
+        *{
+          margin: 0;
+          padding: 0;
+        }
      
      #div_niks{
         /* display: flex;
