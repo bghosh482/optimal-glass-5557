@@ -1,0 +1,193 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#p1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#p2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container>input {
+    display: block;
+    width: 65%;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 17px;
+    border: 2px solid rgb(69, 69, 69);
+    background: none;
+    border-radius: 5px;
+    color:rgb(185,183,185);
+
+}
+
+.container>a {
+    color: rgb(150, 180, 180);
+}
+
+.container>a:hover {
+    color: white;
+}
+
+.container>button {
+    display: block;
+    width: 65%;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    padding: 10px;
+    background-color: rgb(255, 0, 0);
+    font-weight: 500;
+    border: transparent;
+}
+
+#p3,
+#p3>a {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(150, 180, 180);
+}
+
+#p3>a:hover {
+    color: white;
+}
+
+.phase {
+    height: 80px;
+    margin-top: 40px;
+    background-color: rgb(44, 44, 44);
+}
+
+.phase>p {
+    width: 72%;
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgb(44, 44, 44);
+    color: rgb(140, 131, 121);
+}
+
+.phase>p>a {
+    text-decoration: none;
+    background-color: rgb(44, 44, 44);
+    color: rgb(140, 131, 121);
+}
+
+.phase>p>a:hover {
+    color: white;
+}
+
+.container{
+    position: relative;
+}
+
+   
+.form_label{
+    position: absolute;
+    top:9.3rem;
+    left: 8.8rem;
+    color: rgb(185,183,185);
+    cursor: text;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: top 200ms ease-in,left 200ms ease-in, font-size 200ms ease-in;
+}
+.textbox:focus{
+    outline: none;
+    border: 2px solid white;
+}
+
+.textbox:focus ~ .form_label,
+.textbox:not(:placeholder-shown).textbox:not(:focus)~.form_label
+{
+    top: 8rem;
+    left: 8.2rem;
+    font-size: 11px;
+    padding: 3px;
+    background-color:rgb(37,37,37);
+}
+   
+.form_label2{
+    position: absolute;
+    top:12.7rem;
+    left: 8.8rem;
+    color: rgb(185,183,185);
+    cursor: text;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: top 200ms ease-in,left 200ms ease-in, font-size 200ms ease-in;
+}
+.textbox2:focus{
+    border: 2px solid white;
+}
+
+.textbox2:focus ~ .form_label2,
+.textbox2:not(:placeholder-shown).textbox2:not(:focus)~.form_label2
+{
+    top: 11.5rem;
+    left: 8.2rem;
+    font-size: 11px;
+    padding: 3px;
+    background-color:rgb(37,37,37);
+}
+.form_label3{
+    position: absolute;
+    top:16rem;
+    left: 8.8rem;
+    color: rgb(185,183,185);
+    cursor: text;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: top 200ms ease-in,left 200ms ease-in, font-size 200ms ease-in;
+}
+.textbox3:focus{
+    border: 2px solid white;
+}
+
+.textbox3:focus ~ .form_label3,
+.textbox3:not(:placeholder-shown).textbox3:not(:focus)~.form_label3
+{
+    top: 14.9rem;
+    left: 8.2rem;
+    font-size: 11px;
+    padding: 3px;
+    background-color:rgb(37,37,37);
+}
+.form_label4{
+    position: absolute;
+    top:19.4rem;
+    left: 8.8rem;
+    color: rgb(185,183,185);
+    cursor: text;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: top 200ms ease-in,left 200ms ease-in, font-size 200ms ease-in;
+}
+.textbox4:focus{
+    border: 2px solid white;
+}
+
+.textbox4:focus ~ .form_label4,
+.textbox4:not(:placeholder-shown).textbox4:not(:focus)~.form_label4
+{
+    top: 18.2rem;
+    left: 8.2rem;
+    font-size: 11px;
+    padding: 3px;
+    background-color:rgb(37,37,37);
+}
