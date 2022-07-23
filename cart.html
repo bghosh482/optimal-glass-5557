@@ -193,9 +193,9 @@ border: 1px solid red;
 </body>
 </html>
 <script>
-    var arr=JSON.parse(localStorage.getItem("boat"))||[]
+    var added=JSON.parse(localStorage.getItem("boat"))||[]
    
-    var x=arr.length
+    var x=added.length
     
     var sum=0
     function append(arr){
@@ -205,7 +205,7 @@ border: 1px solid red;
         // container.innerHTML=null
 
 
-        arr.forEach(function(elem){
+        added.forEach(function(elem){
     var div = document.createElement("div")
     
     div.setAttribute("id","div_niks")
@@ -248,7 +248,7 @@ sum=sum+Number(elem.price)
     }
     
 // console.log(price)
-    append(arr)
+    append(added)
 
 function remove(){
     event.target.parentNode.remove()
@@ -266,14 +266,14 @@ function remove(){
     else{
         // console.log(arr.length)
         let count=document.getElementById("count")
-        count.innerText=`items =${arr.length}`
+        count.innerText=`items =${added.length}`
     }
 
   
 
  function subTotal(){
     let sum=0;
-    arr.forEach(function(elem){
+    added.forEach(function(elem){
         sum+=+elem.price
     })
     
@@ -282,12 +282,12 @@ function remove(){
     console.log(sum)
 
 }
-subTotal(arr)
+subTotal(added)
 
 // var out=arr.reduce(function(el){
 
 // return el.price
 // })
 // console.log(out)
-localStorage.setItem("boat",JSON.stringify(arr))
+localStorage.setItem("boat",JSON.stringify(added))
 </script>
