@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Base Page</title>
+    <link rel="stylesheet" href="./styles./navbar.css">
+    <link rel="stylesheet" href="./styles./footer.css">
     <style>
         *{
             background-color: black;
@@ -68,6 +70,8 @@
     </style>
 </head>
 <body>
+    <!-- navbar -->
+    <div id="navbar"></div>
     <div id="main_niks">
         <div onclick="box1()" id="niks_box1"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-TWS_480x.png?v=1612338251" class="boat_pic" alt=""></div>
         <div onclick="box2()" id="niks_box2"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Rectangle271_480x.png?v=1612338387" class="boat_pic" alt=""></div>
@@ -82,40 +86,9 @@
         <div onclick="box10()" id="niks_box10"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/MISFIT-shop_480x.png?v=1624859990" class="boat_pic" alt=""></div>
         <div onclick="box11()" id="niks_box11"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Immortal_category_Image_480x.png?v=1626094103" class="boat_pic" alt=""></div>
     </div>
+    <!-- footer
+     -->
+     <div id="footer"></div>
 </body>
 </html>
-<script>
-    function box1(){
-        window.location.href = "Airdopes.html"
-    }
-    function box2(){
-        window.location.href = "rockerz.html"
-    }
-    function box3(){
-        window.location.href = "Watch.html"
-    }
-    function box4(){
-        window.location.href = "Wired.html"
-    }
-    function box5(){
-        window.location.href = "Speakers.html"
-    }
-    function box6(){
-        window.location.href = "Home_audio.html"
-    }
-    function box7(){
-        window.location.href = "mobile_acc.html"
-    }
-    function box8(){
-        window.location.href = "TWS.html"
-    }
-    function box9(){
-        window.location.href = "Headphone1.html"
-    }
-    function box10(){
-        window.location.href = "Headphone2.html"
-    }
-    function box11(){
-        window.location.href = "Headphone3.html"
-    }
-</script>
+<script type="module" src="./scripts/base.js"></script>
